@@ -8,10 +8,34 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TFGRestaurantApp">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".GestionProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteProductoComandaSinRedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductoComandaSinRedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerarComandaSinRedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerComandaSinRedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConRedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SinRedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
