@@ -13,6 +13,7 @@ interface ComandaService {
 
     fun viewComanda(list: ArrayList<Comandas>): String
     fun mesas(list: ArrayList<Comandas>): ArrayList<Int>
+    fun validacion(mesa: Int, camarero: String): Boolean
     fun listProductos(productos: String): ArrayList<String>
 
 }
