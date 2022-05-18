@@ -109,6 +109,30 @@ class ComandaServiceImpl(context: Context): ComandaService {
 
     }
 
+    override fun validacion(mesa: Int, camarero: String): Boolean {
+
+        val list = listAll()
+
+        if (!camarero.equals("")){
+
+            for (i in list){
+                if (i.mesa == mesa){
+
+                    return false
+
+                }
+            }
+
+            return true
+
+        }else{
+
+            return false
+
+        }
+
+    }
+
     override fun listProductos(productos: String): ArrayList<String> {
 
         var list = ArrayList<String>()
