@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     fun sinRed(view: View){
 
-        val i:Intent = Intent(this, SinRedActivity::class.java)
+        val i = Intent(this, SinRedActivity::class.java)
 
         startActivity(i)
 
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     fun conRed(view: View){
 
-        val i:Intent = Intent(this, ConRedActivity::class.java)
+        val i = Intent(this, ConRedActivity::class.java)
 
         startActivity(i)
 
