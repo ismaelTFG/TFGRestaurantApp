@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductoActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir producto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="332dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713">
+
+        <EditText
+            android:id="@+id/identificador"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Identificador del producto"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/categoriaAdd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="Nombre del producto"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/precio"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="Precio del producto"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/addproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir" />
+
+        <Button
+            android:id="@+id/salirAddProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="salir" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

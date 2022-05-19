@@ -4,55 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestionProductosActivity">
+    tools:context=".DeleteProductoActivity">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gestion de productos"
-        android:textSize="20sp"
+        android:text="Borrar producto"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
-
-    <TextView
-        android:id="@+id/productos"
-        android:layout_width="331dp"
-        android:layout_height="317dp"
-        android:text="productos"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.167" />
 
     <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="345dp"
-        android:layout_height="104dp"
+        android:id="@+id/tableLayout2"
+        android:layout_width="357dp"
+        android:layout_height="98dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Spinner
-                android:id="@+id/categoria"
-                android:layout_width="166dp"
-                android:layout_height="match_parent"
-                android:spinnerMode="dropdown" />
+                android:id="@+id/categoriaDelete"
+                android:layout_width="177dp"
+                android:layout_height="match_parent" />
 
             <Button
-                android:id="@+id/buscarCategoria"
-                android:layout_width="179dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/buscarDelete"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
                 android:text="buscar" />
         </TableRow>
 
@@ -60,14 +49,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/addProducto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Añadir" />
+            <Spinner
+                android:id="@+id/spinnerProductos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <Button
-                android:id="@+id/deleteProducto"
+                android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Borrar" />
@@ -76,13 +64,14 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/salirProducto"
-        android:layout_width="317dp"
-        android:layout_height="47dp"
+        android:id="@+id/salirDeleteProducto"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
         android:text="salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.663" />
 </android.support.constraint.ConstraintLayout>
