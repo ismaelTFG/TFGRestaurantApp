@@ -167,4 +167,16 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    override fun spinnerProductos2(list: ArrayList<Productos>): ArrayList<String> {
+        val exit = ArrayList<String>()
+
+        for (i in list){
+
+            exit.add(i.id+" "+i.nombre)
+
+        }
+
+        return exit
+    }
+
 }

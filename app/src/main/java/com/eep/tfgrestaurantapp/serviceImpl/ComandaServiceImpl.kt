@@ -25,9 +25,18 @@ class ComandaServiceImpl(context: Context): ComandaService {
                 var mesa = fila.getInt(0)
                 var camarero = fila.getString(1)
                 var fecha = fila.getString(2)
-                var productos = fila.getString(3)
 
-                comandas.add(Comandas(mesa, camarero, fecha, listProductos(productos)))
+                if (fila.getString(3).equals("sin productos")){
+
+                    comandas.add(Comandas(mesa, camarero, fecha, ArrayList<String>()))
+
+                }else{
+
+                    var productos = fila.getString(3)
+
+                    comandas.add(Comandas(mesa, camarero, fecha, listProductos(productos)))
+
+                }
 
                 fila.moveToNext()
 
@@ -47,7 +56,7 @@ class ComandaServiceImpl(context: Context): ComandaService {
         registro.put("mesa", comandas.mesa)
         registro.put("camarero", comandas.camarero)
         registro.put("fecha", comandas.fecha)
-        registro.put("productos", comandas.textProductos())
+        registro.put("productos", "sin productos")
 
         db.insert("comanda", null, registro)
 
@@ -63,7 +72,17 @@ class ComandaServiceImpl(context: Context): ComandaService {
     }
 
     override fun update(comandas: Comandas) {
-        TODO("Not yet implemented")
+
+        val db = sqlite.writableDatabase
+        val registro = ContentValues()
+
+        registro.put("camarero", comandas.camarero)
+        registro.put("fecha", comandas.fecha)
+        registro.put("productos", comandas.textProductos())
+
+        db.update("comanda", registro, "mesa=${comandas.mesa}", null)
+        db.close()
+
     }
 
     override fun findByMesa(mesa: String): Comandas? {
@@ -143,9 +162,11 @@ class ComandaServiceImpl(context: Context): ComandaService {
         var text = productos.split(",")
 
         for (i in text){
+            if (!i.equals("")){
 
-            list.add(i)
+                list.add(i)
 
+            }
         }
 
         return list

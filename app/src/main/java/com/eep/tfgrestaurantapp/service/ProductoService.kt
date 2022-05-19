@@ -14,5 +14,6 @@ interface ProductoService {
     fun validar(productos: Productos): Boolean
     fun categorias(list: ArrayList<Productos>): ArrayList<String>
     fun spinnerProductos(list: ArrayList<Productos>): ArrayList<String>
+    fun spinnerProductos2(list: ArrayList<Productos>): ArrayList<String>
 
 }
