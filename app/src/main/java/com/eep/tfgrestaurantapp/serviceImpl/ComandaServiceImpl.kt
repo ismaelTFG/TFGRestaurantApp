@@ -56,7 +56,8 @@ class ComandaServiceImpl(context: Context): ComandaService {
     override fun delete(mesa: Int) {
 
         val db = sqlite.writableDatabase
-        val cant = db.delete("comanda", "mesa=${mesa}", null)
+
+        db.delete("comanda", "mesa=${mesa}", null)
         db.close()
 
     }
@@ -114,13 +115,16 @@ class ComandaServiceImpl(context: Context): ComandaService {
         val list = listAll()
 
         if (!camarero.equals("")){
+            if (list.size > 0){
 
-            for (i in list){
-                if (i.mesa == mesa){
+                for (i in list){
+                    if (i.mesa == mesa){
 
-                    return false
+                        return false
 
+                    }
                 }
+
             }
 
             return true

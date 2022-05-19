@@ -35,7 +35,7 @@ class GenerarComandaSinRedActivity : AppCompatActivity() {
 
             }else{
 
-                Toast.makeText(this, "hay un fallo en la comanda a introducir", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "hay un fallo en la comanda al introducir", Toast.LENGTH_SHORT).show()
 
             }
 

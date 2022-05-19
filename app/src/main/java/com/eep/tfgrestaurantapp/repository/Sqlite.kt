@@ -9,7 +9,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "TFGrestaurant", null,
     override fun onCreate(db: SQLiteDatabase) {
 
         db.execSQL("CREATE TABLE comanda (mesa INTEGER PRIMARY KEY, camarero TEXT, fecha TEXT, productos TEXT)")
-        db.execSQL("CREATE TABLE producto (id INTEGER PRIMARY KEY, categorio TEXT, nombre TEXT, precio INTEGER)")
+        db.execSQL("CREATE TABLE producto (id TEXT PRIMARY KEY, categoria TEXT, nombre TEXT, precio INTEGER)")
 
     }
 
