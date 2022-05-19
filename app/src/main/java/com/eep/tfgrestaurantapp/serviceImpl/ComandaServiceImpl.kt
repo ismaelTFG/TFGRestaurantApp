@@ -173,4 +173,37 @@ class ComandaServiceImpl(context: Context): ComandaService {
 
     }
 
+    override fun deleteProductos(mesa: String, producto: String): ArrayList<String> {
+
+        val productos = findByMesa(mesa)?.productos
+        val add = ArrayList<String>()
+
+        if (productos != null) {
+
+            var borrar = true
+
+            for (i in productos){
+                if (borrar){
+                    if (!i.equals(producto)){
+
+                        add.add(i)
+
+                    }else{
+
+                        borrar = false
+
+                    }
+                }else{
+
+                    add.add(i)
+
+                }
+            }
+
+        }
+
+        return add
+
+    }
+
 }
