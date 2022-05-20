@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".SinRedActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Opcion sin red"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,35 +36,62 @@
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="verComanda"
-            android:text="ver comandas" />
+            android:text="ver comandas"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="generarComanda"
-            android:text="generar comanda" />
+            android:text="generar comanda"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="addProducto"
-            android:text="añadir producto a comanda" />
+            android:text="añadir producto a comanda"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="deleteProducto"
-            android:text="borrar producto a comanda" />
+            android:text="borrar producto a comanda"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="gestionProductos"
-            android:text="gestion de productos" />
+            android:text="gestion de productos"
+            android:textColor="@color/black" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

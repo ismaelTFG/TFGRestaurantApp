@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".AddProductoComandaSinRedActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir producto a comanda"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +26,12 @@
         android:layout_height="334dp"
         android:text="comandas"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.405" />
 
     <TableLayout
         android:layout_width="356dp"
@@ -47,13 +50,17 @@
             <Spinner
                 android:id="@+id/comandaSpinner"
                 android:layout_width="166dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/buscarAddComada"
                 android:layout_width="185dp"
                 android:layout_height="wrap_content"
-                android:text=" Buscar comanda" />
+                android:background="@drawable/botones"
+                android:text=" Buscar comanda"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -63,13 +70,17 @@
             <Spinner
                 android:id="@+id/categoriaSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/buscarCategoriaAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="buscar categoria" />
+                android:background="@drawable/botones"
+                android:text="buscar categoria"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -79,13 +90,17 @@
             <Spinner
                 android:id="@+id/productosSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/Add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Añadir producto" />
+                android:background="@drawable/botones"
+                android:text="Añadir producto"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
@@ -94,10 +109,12 @@
         android:id="@+id/salirAdd"
         android:layout_width="331dp"
         android:layout_height="44dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.938" />
 </android.support.constraint.ConstraintLayout>

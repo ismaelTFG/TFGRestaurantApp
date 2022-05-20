@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".GenerarComandaSinRedActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="generar comanda"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +38,8 @@
             android:ems="10"
             android:hint="numero de la mesa"
             android:inputType="number"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/camarero"
@@ -45,7 +48,8 @@
             android:ems="10"
             android:hint="Camarero"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,14 +61,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Salir" />
+                android:background="@drawable/botones"
+                android:text="Salir"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/add"
                 android:layout_width="wrap_content"
                 android:layout_height="76dp"
                 android:layout_weight="1"
-                android:text="Añadir" />
+                android:background="@drawable/botones"
+                android:text="Añadir"
+                android:textColor="@color/black" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

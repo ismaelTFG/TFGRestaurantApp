@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".GestionProductosActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gestion de productos"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +26,7 @@
         android:layout_height="317dp"
         android:text="productos"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,13 +50,17 @@
                 android:id="@+id/categoria"
                 android:layout_width="166dp"
                 android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo"
                 android:spinnerMode="dropdown" />
 
             <Button
                 android:id="@+id/buscarCategoria"
                 android:layout_width="179dp"
                 android:layout_height="wrap_content"
-                android:text="buscar" />
+                android:background="@drawable/botones"
+                android:text="buscar"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -64,13 +71,17 @@
                 android:id="@+id/addProducto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Añadir" />
+                android:background="@drawable/botones"
+                android:text="Añadir"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/deleteProducto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Borrar" />
+                android:background="@drawable/botones"
+                android:text="Borrar"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
@@ -79,7 +90,9 @@
         android:id="@+id/salirProducto"
         android:layout_width="317dp"
         android:layout_height="47dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
