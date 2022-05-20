@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".DeleteProductoComandaSinRedActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Borrar producto a comanda"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +27,7 @@
         android:layout_height="309dp"
         android:text="comanda"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,13 +51,17 @@
             <Spinner
                 android:id="@+id/spinnerBuscar"
                 android:layout_width="163dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/buscarDeleteProducto"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="buscar" />
+                android:background="@drawable/botones"
+                android:text="buscar"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -64,13 +71,17 @@
             <Spinner
                 android:id="@+id/spinnerProducto"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/deleteProductoComanda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="borrar" />
+                android:background="@drawable/botones"
+                android:text="borrar"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
@@ -79,7 +90,9 @@
         android:id="@+id/salirDelete"
         android:layout_width="346dp"
         android:layout_height="50dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

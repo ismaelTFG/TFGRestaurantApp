@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".VerComandaSinRedActivity">
 
     <TextView
@@ -25,6 +26,7 @@
         android:layout_height="400dp"
         android:text="comandas"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,13 +49,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="pagada" />
+            android:background="@drawable/botones"
+            android:text="pagada"
+            android:textColor="@color/black" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="119dp"
             android:layout_height="49dp"
             android:layout_weight="1"
+            android:background="@drawable/spinner"
+            android:paddingStart="25dp"
+            android:popupBackground="@drawable/fondo"
             android:spinnerMode="dropdown" />
 
         <Button
@@ -61,14 +68,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="buscar" />
+            android:background="@drawable/botones"
+            android:text="buscar"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <Button
         android:id="@+id/salir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="341dp"
+        android:layout_height="43dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

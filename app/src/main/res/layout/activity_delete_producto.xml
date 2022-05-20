@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".DeleteProductoActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Borrar producto"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,13 +38,17 @@
             <Spinner
                 android:id="@+id/categoriaDelete"
                 android:layout_width="177dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/buscarDelete"
                 android:layout_width="175dp"
                 android:layout_height="match_parent"
-                android:text="buscar" />
+                android:background="@drawable/botones"
+                android:text="buscar"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -52,13 +58,17 @@
             <Spinner
                 android:id="@+id/spinnerProductos"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondo" />
 
             <Button
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Borrar" />
+                android:background="@drawable/botones"
+                android:text="Borrar"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
@@ -67,7 +77,9 @@
         android:id="@+id/salirDeleteProducto"
         android:layout_width="251dp"
         android:layout_height="44dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

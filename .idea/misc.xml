@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/botones.xml" value="0.1785" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondo.xml" value="0.1785" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/spinnerfondo.xml" value="0.1" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_add_producto.xml" value="0.1796875" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_add_producto_comanda_sin_red.xml" value="0.165625" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_con_red.xml" value="0.1796875" />
@@ -13,6 +16,7 @@
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_sin_red.xml" value="0.1796875" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_ver_comanda_sin_red.xml" value="0.1796875" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/spinner.xml" value="0.1796875" />
       </map>
     </option>
   </component>

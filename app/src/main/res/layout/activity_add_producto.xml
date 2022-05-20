@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".AddProductoActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir producto"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +22,8 @@
         app:layout_constraintVertical_bias="0.16" />
 
     <LinearLayout
-        android:layout_width="335dp"
-        android:layout_height="332dp"
+        android:layout_width="331dp"
+        android:layout_height="360dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +38,15 @@
             android:ems="10"
             android:hint="Identificador del producto"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <Spinner
             android:id="@+id/categoriaAdd"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:background="@drawable/spinner"
+            android:popupBackground="@drawable/fondo"
             android:textAlignment="center" />
 
         <EditText
@@ -51,7 +56,8 @@
             android:ems="10"
             android:hint="Nombre del producto"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/precio"
@@ -60,18 +66,27 @@
             android:ems="10"
             android:hint="Precio del producto"
             android:inputType="numberDecimal"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/addproducto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Añadir" />
+            android:background="@drawable/botones"
+            android:text="Añadir"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
 
         <Button
             android:id="@+id/salirAddProducto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="salir" />
+            android:background="@drawable/botones"
+            android:text="salir"
+            android:textColor="@color/black" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
