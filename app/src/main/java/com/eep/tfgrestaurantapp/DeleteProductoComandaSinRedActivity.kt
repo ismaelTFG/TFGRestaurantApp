@@ -34,7 +34,9 @@ class DeleteProductoComandaSinRedActivity : AppCompatActivity() {
 
             text.setText(comandaServiceImpl.findByMesa(comandas.selectedItem.toString()).toString())
 
-            producto.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, productoServiceImpl.spinnerProductos2(productoServiceImpl.listAll()))
+            producto.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, productoServiceImpl.spinnerProductos2(comandaServiceImpl.productos(
+                comandaServiceImpl.findByMesa(comandas.selectedItem.toString())!!
+            )))
 
         }
 

@@ -4,6 +4,7 @@ package com.eep.tfgrestaurantapp.serviceImpl
 import android.content.ContentValues
 import android.content.Context
 import com.eep.tfgrestaurantapp.entity.Comandas
+import com.eep.tfgrestaurantapp.entity.Productos
 import com.eep.tfgrestaurantapp.repository.Sqlite
 import com.eep.tfgrestaurantapp.service.ComandaService
 import java.util.ArrayList
@@ -11,6 +12,8 @@ import java.util.ArrayList
 class ComandaServiceImpl(context: Context): ComandaService {
 
     val sqlite = Sqlite(context)
+
+    val productoServiceImpl = ProductoServiceImpl(context)
 
     override fun listAll(): ArrayList<Comandas> {
 
@@ -170,6 +173,25 @@ class ComandaServiceImpl(context: Context): ComandaService {
         }
 
         return list
+
+    }
+
+    override fun productos(comandas: Comandas): ArrayList<Productos> {
+
+        val list = productoServiceImpl.listAll()
+        val exit = ArrayList<Productos>()
+
+        for (i in list){
+            for (j in comandas.productos){
+                if (i.id.equals(j)){
+
+                    exit.add(i)
+
+                }
+            }
+        }
+
+        return exit
 
     }
 
