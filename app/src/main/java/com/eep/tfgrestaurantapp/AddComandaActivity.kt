@@ -1,36 +1,36 @@
 package com.eep.tfgrestaurantapp
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.eep.tfgrestaurantapp.entity.Comandas
 import com.eep.tfgrestaurantapp.serviceImpl.ComandaServiceImpl
 import java.time.LocalDate
 import java.util.ArrayList
 
-class GenerarComandaSinRedActivity : AppCompatActivity() {
+class AddComandaActivity : AppCompatActivity() {
 
     val comandaServiceImpl = ComandaServiceImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_generar_comanda_sin_red)
+        setContentView(R.layout.activity_add_comanda)
 
-        val mesa = findViewById<EditText>(R.id.mesa)
-        val camarero = findViewById<EditText>(R.id.camarero)
-        val add = findViewById<Button>(R.id.add)
-        val salir = findViewById<Button>(R.id.salirGenerar)
+        val camarero = intent.getStringExtra("user").toString()
+        val mesa = findViewById<EditText>(R.id.mesaComanda)
+        val add = findViewById<Button>(R.id.addComanda)
+        val salir = findViewById<Button>(R.id.salirAddComanda)
 
         add.setOnClickListener {
 
-            if (comandaServiceImpl.validacion(mesa.text.toString().toInt(), camarero.text.toString())){
+            if (comandaServiceImpl.validacionRed(mesa.text.toString().toInt(), camarero)){
 
-                val comandas = Comandas(mesa.text.toString().toInt(), camarero.text.toString(), LocalDate.now().toString(), ArrayList<String>())
+                val comandas = Comandas(mesa.text.toString().toInt(), camarero, LocalDate.now().toString(), ArrayList<String>())
 
-                comandaServiceImpl.add(comandas)
+                comandaServiceImpl.addComandaRed(comandas)
                 Toast.makeText(this, "se a añadido la comanda", Toast.LENGTH_SHORT).show()
 
             }else{

@@ -4,55 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".MainActivity">
+    tools:context=".InicioActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elige la opcion a utilizar"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:text="manolo"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="357dp"
+        android:layout_width="309dp"
+        android:layout_height="193dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957">
+        app:layout_constraintVertical_bias="0.559">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones"
-            android:onClick="conRed"
-            android:text="Con red"
-            android:textColor="@color/black" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
+            android:onClick="ver"
+            android:text=" Ver comandas" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones"
-            android:onClick="sinRed"
-            android:text="sin red"
-            android:textColor="@color/black" />
+            android:onClick="add"
+            android:text="Añadir comanda" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="productos"
+            android:text="gestion de productos" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="salir"
+            android:text="cerrar sesion" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

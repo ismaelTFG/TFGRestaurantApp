@@ -4,80 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".GenerarComandaSinRedActivity">
+    tools:context=".AddComandaActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="generar comanda"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:text="Añadir comanda"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <LinearLayout
-        android:layout_width="294dp"
-        android:layout_height="233dp"
+        android:layout_width="304dp"
+        android:layout_height="110dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58">
+        app:layout_constraintVertical_bias="0.499">
 
         <EditText
-            android:id="@+id/mesa"
+            android:id="@+id/mesaComanda"
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="numero de la mesa"
+            android:hint="mesa"
             android:inputType="number"
-            android:textAlignment="center"
-            android:textColor="@color/white" />
-
-        <EditText
-            android:id="@+id/camarero"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:ems="10"
-            android:hint="Camarero"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textAlignment="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/salirGenerar"
+                android:id="@+id/salirAddComanda"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/botones"
-                android:text="Salir"
-                android:textColor="@color/black" />
+                android:text="salir" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/add"
+                android:id="@+id/addComanda"
                 android:layout_width="wrap_content"
-                android:layout_height="76dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/botones"
-                android:text="Añadir"
-                android:textColor="@color/black" />
+                android:text="Añadir" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

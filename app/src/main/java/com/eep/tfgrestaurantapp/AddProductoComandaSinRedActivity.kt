@@ -1,12 +1,11 @@
 package com.eep.tfgrestaurantapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import android.widget.TextView
-import com.eep.tfgrestaurantapp.R
+import androidx.appcompat.app.AppCompatActivity
 import com.eep.tfgrestaurantapp.serviceImpl.ComandaServiceImpl
 import com.eep.tfgrestaurantapp.serviceImpl.ProductoServiceImpl
 

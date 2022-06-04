@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".DeleteProductoActivity">
+    tools:context=".AddProductoComandaActivity">
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Borrar producto"
+        android:text="añadir producto"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,12 +20,12 @@
         app:layout_constraintVertical_bias="0.167" />
 
     <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="357dp"
-        android:layout_height="98dp"
+        android:id="@+id/tableLayout4"
+        android:layout_width="342dp"
+        android:layout_height="159dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -36,19 +34,15 @@
             android:layout_height="match_parent">
 
             <Spinner
-                android:id="@+id/categoriaDelete"
-                android:layout_width="177dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/spinner"
-                android:popupBackground="@drawable/fondo" />
+                android:id="@+id/Comadaspinner"
+                android:layout_width="171dp"
+                android:layout_height="match_parent" />
 
             <Button
-                android:id="@+id/buscarDelete"
-                android:layout_width="175dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/botones"
-                android:text="buscar"
-                android:textColor="@color/black" />
+                android:id="@+id/buscaradd"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:text="buscar" />
         </TableRow>
 
         <TableRow
@@ -56,34 +50,44 @@
             android:layout_height="match_parent">
 
             <Spinner
-                android:id="@+id/spinnerProductos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/spinner"
-                android:popupBackground="@drawable/fondo" />
+                android:id="@+id/Categoriaspinner"
+                android:layout_width="77dp"
+                android:layout_height="match_parent" />
 
             <Button
-                android:id="@+id/delete"
+                android:id="@+id/buscarcategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/botones"
-                android:text="Borrar"
-                android:textColor="@color/black" />
+                android:text="categoria" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/Productospinner"
+                android:layout_width="82dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/addproductoComanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="añadir" />
         </TableRow>
 
     </TableLayout>
 
     <Button
-        android:id="@+id/salirDeleteProducto"
-        android:layout_width="251dp"
-        android:layout_height="44dp"
-        android:background="@drawable/botones"
+        android:id="@+id/salirComandaadd"
+        android:layout_width="317dp"
+        android:layout_height="53dp"
         android:text="salir"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintVertical_bias="0.733" />
 </androidx.constraintlayout.widget.ConstraintLayout>

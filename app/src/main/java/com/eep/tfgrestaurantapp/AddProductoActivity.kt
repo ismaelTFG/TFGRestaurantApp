@@ -1,8 +1,8 @@
 package com.eep.tfgrestaurantapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.eep.tfgrestaurantapp.entity.Productos
 import com.eep.tfgrestaurantapp.serviceImpl.ProductoServiceImpl
 

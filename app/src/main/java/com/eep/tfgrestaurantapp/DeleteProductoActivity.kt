@@ -1,10 +1,10 @@
 package com.eep.tfgrestaurantapp
 
 import android.content.DialogInterface
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.AlertDialog
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.eep.tfgrestaurantapp.serviceImpl.ProductoServiceImpl
 
 class DeleteProductoActivity : AppCompatActivity() {
