@@ -2,9 +2,9 @@ package com.eep.tfgrestaurantapp
 
 import android.app.AlertDialog
 import android.content.DialogInterface
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.eep.tfgrestaurantapp.serviceImpl.ComandaServiceImpl
 
 class VerComandaSinRedActivity : AppCompatActivity() {

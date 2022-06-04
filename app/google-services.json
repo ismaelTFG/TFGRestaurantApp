@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1002558353534",
+    "project_id": "tfgrestaurant",
+    "storage_bucket": "tfgrestaurant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002558353534:android:d870c34276e42698ef682f",
+        "android_client_info": {
+          "package_name": "com.eep.tfgrestaurantapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002558353534-5n2sf7tevk802gjkj5b4nck40iq99mn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy_hWtpXjCvcP2eEh4MvBx61tTZLpBnLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002558353534-5n2sf7tevk802gjkj5b4nck40iq99mn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

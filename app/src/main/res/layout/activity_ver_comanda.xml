@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerComandaActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ver comandas"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/comandaConRed"
+        android:layout_width="347dp"
+        android:layout_height="428dp"
+        android:text="comanda"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="371dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/pagada"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="pagada" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="152dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/buscarConRed"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:text="buscar" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/addProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="añadir" />
+
+            <Button
+                android:id="@+id/salirConRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="salir" />
+
+            <Button
+                android:id="@+id/deleteProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="borrar" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

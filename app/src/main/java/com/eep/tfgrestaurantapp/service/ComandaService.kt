@@ -19,4 +19,13 @@ interface ComandaService {
     fun productos(comandas: Comandas): ArrayList<Productos>
     fun deleteProductos(mesa: String, producto: String): ArrayList<String>
 
+    fun addToFirebase(comandas: Comandas)
+    fun listAllRed(): ArrayList<Comandas>
+    fun deleteRed(mesa: Int)
+    fun findByMesaRed(mesa: String): Comandas?
+
+    fun validacionRed(mesa: Int, camarero: String): Boolean
+    fun addComandaRed(comandas: Comandas)
+    fun updateComandaRed(comandas: Comandas)
+
 }

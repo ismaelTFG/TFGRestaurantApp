@@ -11,6 +11,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "TFGrestaurant", null,
     override fun onCreate(db: SQLiteDatabase) {
 
         db.execSQL("CREATE TABLE comanda (mesa INTEGER PRIMARY KEY, camarero TEXT, fecha TEXT, productos TEXT)")
+        db.execSQL("CREATE TABLE comandaCon (mesa INTEGER PRIMARY KEY, camarero TEXT, fecha TEXT, productos TEXT)")
         db.execSQL("CREATE TABLE producto (id TEXT PRIMARY KEY, categoria TEXT, nombre TEXT, precio INTEGER)")
         registro(Productos("EM1", "Para empezar", "Empanada criolla", 3.0), db)
         registro(Productos("EM2", "Para empezar", "Empanada de jamón y queso", 3.0), db)
