@@ -9,8 +9,13 @@ import java.util.ArrayList
 
 class ProductoServiceImpl(context: Context): ProductoService {
 
+    //conexion con sqlite
     val sqlite = Sqlite(context)
 
+    /**
+     * metodo para mostrar todos los productos
+     * @return lista de los productos
+     */
     override fun listAll(): ArrayList<Productos> {
 
         val db = sqlite.writableDatabase
@@ -21,10 +26,10 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
             while (fila.isAfterLast == false){
 
-                var id = fila.getString(0)
-                var categoria = fila.getString(1)
-                var nombre = fila.getString(2)
-                var precio = fila.getDouble(3)
+                val id = fila.getString(0)
+                val categoria = fila.getString(1)
+                val nombre = fila.getString(2)
+                val precio = fila.getDouble(3)
 
                 productos.add(Productos(id, categoria, nombre, precio))
 
@@ -38,6 +43,10 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para añadir productos
+     * @param productos
+     */
     override fun add(productos: Productos) {
 
         val db = sqlite.writableDatabase
@@ -52,6 +61,10 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para eliminar productos
+     * @param id del producto
+     */
     override fun delete(id: String) {
 
         val db = sqlite.writableDatabase
@@ -61,6 +74,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para buscar productos por categoria
+     * @param categoria
+     * @return lista de productos
+     */
     override fun findByCategoria(categoria: String): ArrayList<Productos> {
 
         val list = listAll()
@@ -78,6 +96,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para mostrar los productos con un formato
+     * @param list de los productos
+     * @return string
+     */
     override fun viewProductos(list: ArrayList<Productos>): String {
 
         var exit = ""
@@ -92,6 +115,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * validar los productos
+     * @param productos
+     * @return si el formato es correcto o no
+     */
     override fun validar(productos: Productos): Boolean {
 
         val list = listAll()
@@ -119,6 +147,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para mostrar la categorias de los productos pasados
+     * @param list de productos
+     * @return lista de las categorias
+     */
     override fun categorias(list: ArrayList<Productos>): ArrayList<String> {
 
         val exit = ArrayList<String>()
@@ -153,6 +186,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para mostrar los productos en el spinner
+     * @param list de los productos
+     * @return lista de los productos para mostrar en el spinner
+     */
     override fun spinnerProductos(list: ArrayList<Productos>): ArrayList<String> {
 
         val exit = ArrayList<String>()
@@ -167,6 +205,11 @@ class ProductoServiceImpl(context: Context): ProductoService {
 
     }
 
+    /**
+     * metodo para mostrar los productos en el spinner con otro formato
+     * @param list de los productos
+     * @return lista de los productos para mostrar en el spinner
+     */
     override fun spinnerProductos2(list: ArrayList<Productos>): ArrayList<String> {
         val exit = ArrayList<String>()
 

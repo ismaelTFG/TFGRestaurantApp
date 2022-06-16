@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondosqlite"
     tools:context=".VerComandaSinRedActivity">
 
     <TextView
@@ -60,7 +60,7 @@
             android:layout_weight="1"
             android:background="@drawable/spinner"
             android:paddingStart="25dp"
-            android:popupBackground="@drawable/fondo"
+            android:popupBackground="@drawable/fondospinner"
             android:spinnerMode="dropdown" />
 
         <Button

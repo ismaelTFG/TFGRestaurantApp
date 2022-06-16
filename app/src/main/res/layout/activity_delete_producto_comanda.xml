@@ -4,17 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondofirebase"
     tools:context=".DeleteProductoComandaActivity">
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="borrar"
+        android:text="Borrar productos"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TableLayout
+        android:id="@+id/tableLayout5"
+        android:layout_width="320dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinnerComanda"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
+
+            <Button
+                android:id="@+id/buscarDeleteProductoComanda"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botones"
+                android:text="Buscar"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinnerProductosComanda"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
+
+            <Button
+                android:id="@+id/deleteProductoComandaCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botones"
+                android:text="Borrar"
+                android:textColor="@color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="299dp"
+        android:layout_height="53dp"
+        android:background="@drawable/botones"
+        android:text="salir"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
 </androidx.constraintlayout.widget.ConstraintLayout>

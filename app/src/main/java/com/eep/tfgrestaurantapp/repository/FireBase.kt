@@ -6,6 +6,10 @@ import com.google.firebase.ktx.Firebase
 
 class FireBase {
 
+    /**
+     * metodo para conectar con firebase
+     * @return conexion con firebase
+     */
     fun getFireBase(): FirebaseFirestore {
 
         return Firebase.firestore

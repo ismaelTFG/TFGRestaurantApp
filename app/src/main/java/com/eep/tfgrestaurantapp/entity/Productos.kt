@@ -4,9 +4,12 @@ import java.lang.StringBuilder
 
 class Productos(var id:String, var categoria:String, var nombre:String, var precio:Double){
 
+    /**
+     * metodo toString personalizado
+     */
     override fun toString(): String {
 
-        var exit = StringBuilder()
+        val exit = StringBuilder()
 
         exit.append("identificador: ").append(id)
         exit.append(", categoria: ").append(categoria)

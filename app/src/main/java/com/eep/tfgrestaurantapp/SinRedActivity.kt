@@ -7,11 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SinRedActivity : AppCompatActivity() {
 
+    /**
+     * metodo para cuando inician la vista cree todos los contenidos
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sin_red)
     }
 
+    /**
+     * ver comandas
+     */
     fun verComanda(view: View){
 
         val i:Intent = Intent(this, VerComandaSinRedActivity::class.java)
@@ -20,6 +26,9 @@ class SinRedActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * generar la comanda
+     */
     fun generarComanda(view: View){
 
         val i:Intent = Intent(this, GenerarComandaSinRedActivity::class.java)
@@ -28,6 +37,9 @@ class SinRedActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * añadir productos a comanda
+     */
     fun addProducto(view: View){
 
         val i:Intent = Intent(this, AddProductoComandaSinRedActivity::class.java)
@@ -36,6 +48,9 @@ class SinRedActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * borrar producto a comanda
+     */
     fun deleteProducto(view: View){
 
         val i:Intent = Intent(this, DeleteProductoComandaSinRedActivity::class.java)
@@ -44,6 +59,9 @@ class SinRedActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * gestion de los productos guardados
+     */
     fun gestionProductos(view: View){
 
         val i:Intent = Intent(this, GestionProductosActivity::class.java)
