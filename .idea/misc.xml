@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/botones.xml" value="0.1785" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondo.xml" value="0.1785" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondoSqlite.xml" value="0.1535" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondofirebase.xml" value="0.1535" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondospinner.xml" value="0.1535" />
+        <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/fondosqlitr.xml" value="0.1535" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/spinner.xml" value="0.188" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/drawable/spinnerfondo.xml" value="0.1" />
         <entry key="..\:/Users/imonico/Documents/TFG/TFGRestaurantApp/app/src/main/res/layout/activity_add_comanda.xml" value="0.1796875" />

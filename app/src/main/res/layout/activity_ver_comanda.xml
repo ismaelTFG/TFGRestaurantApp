@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondofirebase"
     tools:context=".VerComandaActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ver comandas"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +26,7 @@
         android:layout_height="428dp"
         android:text="comanda"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,18 +50,24 @@
                 android:id="@+id/pagada"
                 android:layout_width="113dp"
                 android:layout_height="wrap_content"
-                android:text="pagada" />
+                android:background="@drawable/botones"
+                android:text="pagada"
+                android:textColor="@color/black" />
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="152dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
 
             <Button
                 android:id="@+id/buscarConRed"
                 android:layout_width="104dp"
                 android:layout_height="wrap_content"
-                android:text="buscar" />
+                android:background="@drawable/botones"
+                android:text="buscar"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -69,19 +78,25 @@
                 android:id="@+id/addProductos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="añadir" />
+                android:background="@drawable/botones"
+                android:text="añadir"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/salirConRed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="salir" />
+                android:background="@drawable/botones"
+                android:text="salir"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/deleteProductos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="borrar" />
+                android:background="@drawable/botones"
+                android:text="borrar"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>

@@ -12,18 +12,26 @@ import java.util.ArrayList
 
 class GenerarComandaSinRedActivity : AppCompatActivity() {
 
+    //Servicios de comanda
     val comandaServiceImpl = ComandaServiceImpl(this)
 
+    /**
+     * metodo para cuando inician la vista cree todos los contenidos
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_generar_comanda_sin_red)
 
+        //parametro de los componentes de la vista a modificar
         val mesa = findViewById<EditText>(R.id.mesa)
         val camarero = findViewById<EditText>(R.id.camarero)
         val add = findViewById<Button>(R.id.add)
         val salir = findViewById<Button>(R.id.salirGenerar)
 
+        /**
+         * logica del boton de añadir
+         */
         add.setOnClickListener {
 
             if (comandaServiceImpl.validacion(mesa.text.toString().toInt(), camarero.text.toString())){
@@ -41,6 +49,9 @@ class GenerarComandaSinRedActivity : AppCompatActivity() {
 
         }
 
+        /**
+         * logica del boton de salir
+         */
         salir.setOnClickListener {
 
             finish()

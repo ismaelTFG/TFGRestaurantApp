@@ -12,18 +12,27 @@ import java.util.ArrayList
 
 class AddComandaActivity : AppCompatActivity() {
 
+    //servicio de las comandas
     val comandaServiceImpl = ComandaServiceImpl(this)
 
+    /**
+     * metodo para cuando inician la vista cree todos los contenidos
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_comanda)
 
+        //parametro pasado de la vista anterior
         val camarero = intent.getStringExtra("user").toString()
+        //parametro de los componentes de la vista a modificar
         val mesa = findViewById<EditText>(R.id.mesaComanda)
         val add = findViewById<Button>(R.id.addComanda)
         val salir = findViewById<Button>(R.id.salirAddComanda)
 
+        /**
+         * logica del boton de la añadir
+         */
         add.setOnClickListener {
 
             if (comandaServiceImpl.validacionRed(mesa.text.toString().toInt(), camarero)){
@@ -41,6 +50,9 @@ class AddComandaActivity : AppCompatActivity() {
 
         }
 
+        /**
+         * logica del boton para salir
+         */
         salir.setOnClickListener {
 
             finish()

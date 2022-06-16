@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondofirebase"
     tools:context=".InicioActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="manolo"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +22,8 @@
         app:layout_constraintVertical_bias="0.13" />
 
     <LinearLayout
-        android:layout_width="309dp"
-        android:layout_height="193dp"
+        android:layout_width="314dp"
+        android:layout_height="246dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,28 +35,48 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="ver"
-            android:text=" Ver comandas" />
+            android:text=" Ver comandas"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
 
         <Button
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="add"
-            android:text="Añadir comanda" />
+            android:text="Añadir comanda"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="productos"
-            android:text="gestion de productos" />
+            android:text="gestion de productos"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botones"
             android:onClick="salir"
-            android:text="cerrar sesion" />
+            android:text="cerrar sesion"
+            android:textColor="@color/black" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

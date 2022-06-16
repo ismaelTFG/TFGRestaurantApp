@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondosqlite"
     tools:context=".DeleteProductoComandaSinRedActivity">
 
     <TextView
@@ -53,7 +53,7 @@
                 android:layout_width="163dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/spinner"
-                android:popupBackground="@drawable/fondo" />
+                android:popupBackground="@drawable/fondospinner" />
 
             <Button
                 android:id="@+id/buscarDeleteProducto"
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/spinner"
-                android:popupBackground="@drawable/fondo" />
+                android:popupBackground="@drawable/fondospinner" />
 
             <Button
                 android:id="@+id/deleteProductoComanda"

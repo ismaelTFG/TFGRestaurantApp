@@ -2,6 +2,10 @@ package com.eep.tfgrestaurantapp.entity
 
 class Comandas(var mesa:Int, var camarero:String, var fecha: String, var productos:ArrayList<String>) {
 
+    /**
+     * metodo para motrar los productos el los activitys
+     * @return texto modificado
+     */
     fun textProductos(): String{
 
         var exit = ""
@@ -16,9 +20,12 @@ class Comandas(var mesa:Int, var camarero:String, var fecha: String, var product
 
     }
 
+    /**
+     * metodo toString personalizado
+     */
     override fun toString(): String {
 
-        var exit = StringBuilder()
+        val exit = StringBuilder()
 
         exit.append("mesa: ").append(mesa)
         exit.append("\ncamarero: ").append(camarero)

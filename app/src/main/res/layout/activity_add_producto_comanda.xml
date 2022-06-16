@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondofirebase"
     tools:context=".AddProductoComandaActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="añadir producto"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +23,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout4"
-        android:layout_width="342dp"
-        android:layout_height="159dp"
+        android:layout_width="366dp"
+        android:layout_height="153dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -31,18 +33,26 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="81dp">
 
             <Spinner
                 android:id="@+id/Comadaspinner"
                 android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
+
+            <Space
+                android:layout_width="23dp"
                 android:layout_height="match_parent" />
 
             <Button
                 android:id="@+id/buscaradd"
                 android:layout_width="171dp"
                 android:layout_height="wrap_content"
-                android:text="buscar" />
+                android:background="@drawable/botones"
+                android:text="buscar"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -52,13 +62,21 @@
             <Spinner
                 android:id="@+id/Categoriaspinner"
                 android:layout_width="77dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/buscarcategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="categoria" />
+                android:background="@drawable/botones"
+                android:text="categoria"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -68,13 +86,21 @@
             <Spinner
                 android:id="@+id/Productospinner"
                 android:layout_width="82dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner"
+                android:popupBackground="@drawable/fondospinner" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/addproductoComanda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="añadir" />
+                android:background="@drawable/botones"
+                android:text="añadir"
+                android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
@@ -83,7 +109,9 @@
         android:id="@+id/salirComandaadd"
         android:layout_width="317dp"
         android:layout_height="53dp"
+        android:background="@drawable/botones"
         android:text="salir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

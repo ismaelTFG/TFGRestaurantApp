@@ -9,12 +9,18 @@ import com.eep.tfgrestaurantapp.serviceImpl.ProductoServiceImpl
 
 class DeleteProductoActivity : AppCompatActivity() {
 
+    //Servicios de productos
     val productoServiceImpl = ProductoServiceImpl(this)
 
+    /**
+     * metodo para cuando inician la vista cree todos los contenidos
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_delete_producto)
+
+        //parametro de los componentes de la vista a modificar
         val producto = findViewById<TextView>(R.id.productos)
         val categoria = findViewById<Spinner>(R.id.categoriaDelete)
         val productos = findViewById<Spinner>(R.id.spinnerProductos)
@@ -22,14 +28,21 @@ class DeleteProductoActivity : AppCompatActivity() {
         val delete = findViewById<Button>(R.id.delete)
         val salir = findViewById<Button>(R.id.salirDeleteProducto)
 
+        //Relleno del spinner de categotias
         categoria.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, productoServiceImpl.categorias(productoServiceImpl.listAll()))
 
+        /**
+         * logica del boton de buscar
+         */
         buscar.setOnClickListener {
 
             productos.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, productoServiceImpl.spinnerProductos(productoServiceImpl.findByCategoria(categoria.selectedItem.toString())))
 
         }
 
+        /**
+         * logica del boton de borrado
+         */
         delete.setOnClickListener {
 
             val dialog = AlertDialog.Builder(this).setPositiveButton("si", DialogInterface.OnClickListener { dialogInterface, i ->
@@ -53,6 +66,9 @@ class DeleteProductoActivity : AppCompatActivity() {
 
         }
 
+        /**
+         * logica del boton de salir
+         */
         salir.setOnClickListener {
 
             finish()

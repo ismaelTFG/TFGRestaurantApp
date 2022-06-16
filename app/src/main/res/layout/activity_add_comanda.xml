@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondofirebase"
     tools:context=".AddComandaActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir comanda"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +39,12 @@
             android:ems="10"
             android:hint="mesa"
             android:inputType="number"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +56,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="salir" />
+                android:background="@drawable/botones"
+                android:text="salir"
+                android:textColor="@color/black" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -61,7 +70,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Añadir" />
+                android:background="@drawable/botones"
+                android:text="Añadir"
+                android:textColor="@color/black" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

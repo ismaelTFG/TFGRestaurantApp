@@ -8,6 +8,10 @@ import com.eep.tfgrestaurantapp.entity.Productos
 
 class Sqlite(context: Context): SQLiteOpenHelper(context, "TFGrestaurant", null, 1) {
 
+    /**
+     * metodo de la reacion de la base de datos sqlite y parametros por defecto
+     * @param base de datos
+     */
     override fun onCreate(db: SQLiteDatabase) {
 
         db.execSQL("CREATE TABLE comanda (mesa INTEGER PRIMARY KEY, camarero TEXT, fecha TEXT, productos TEXT)")
@@ -54,12 +58,20 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "TFGrestaurant", null,
 
     }
 
+    /**
+     * metodo para actualizar la base de datos
+     */
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
 
         TODO("Not yet implemented")
 
     }
 
+    /**
+     * metodo para registrar productos
+     * @param producto
+     * @param base de datos
+     */
     private fun registro(productos: Productos, db: SQLiteDatabase){
 
         val registro = ContentValues()
